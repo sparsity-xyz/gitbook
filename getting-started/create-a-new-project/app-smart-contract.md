@@ -58,7 +58,7 @@ A session represents the entire lifecycle of an app’s execution. It determines
 &#xNAN;**`initialData`** is the encoded data that the user passes to the Sparsity network when initializing the session.
 
 🔹 **Auth**\
-Auth verifies whether an address has permission to use Sparsity within a session. This information is eventually relayed from the mainnet to the Sparsity network, where the App ABCI Core can utilize it.
+Auth verifies whether an address has permission to use Sparsity within a session. This information is eventually relayed from the host chain to the Sparsity network, where the App ABCI Core can utilize it.
 
 🔹 **Settle**\
 When Sparsity completes its computation, the results are returned via a callback and recorded in the developer’s smart contract.

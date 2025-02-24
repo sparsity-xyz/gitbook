@@ -1,4 +1,4 @@
-# Deploy Smart Contract on Mainnet
+# Deploy Smart Contract on Host Chain
 
 ## Contract Deployment Guide
 

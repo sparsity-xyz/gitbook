@@ -21,7 +21,7 @@
 
 ## App Deployment
 
-* [Deploy Smart Contract on Mainnet](app-deployment/local.md)
+* [Deploy Smart Contract on Host Chain](app-deployment/local.md)
 * [Publish Docker](app-deployment/publish-docker.md)
 * [Register into Sparsity](app-deployment/spin-contracts.md)
 * [Verification](app-deployment/spin-da.md)

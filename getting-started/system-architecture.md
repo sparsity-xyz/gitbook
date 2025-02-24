@@ -43,4 +43,4 @@ To integrate an application with Sparsity, the app developer/owner must:
 
 With Sparsity, developers can **effortlessly scale** their dApps, leveraging **decentralized infrastructure and high-performance computation** to create the next generation of Web3 applications! 🚀
 
-<figure><img src="../.gitbook/assets/telegram-cloud-document-2-5314640622819239413.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

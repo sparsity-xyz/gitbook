@@ -92,4 +92,4 @@ Developers can define custom message formats, parse them, and process interactio
 ### Additional Features
 
 * **Accessing Block Height:** The `blockHeight` property allows developers to retrieve the latest block number for custom logic implementation.
-* **State Management & Smart Contract Integration:** By implementing these core functions, developers can define application behavior, manage state transitions, and seamlessly integrate with the Sparsity network and smart contracts on the mainnet.
+* **State Management & Smart Contract Integration:** By implementing these core functions, developers can define application behavior, manage state transitions, and seamlessly integrate with the Sparsity network and smart contracts on the host chain.

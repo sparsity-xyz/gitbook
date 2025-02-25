@@ -4,7 +4,7 @@
 
 Before your application becomes available on the Sparsity platform, it must undergo a review and approval process.
 
-* Submit a request via our Discord: [Click here](https://discord.gg/8bxcXmf3).
+* Submit a request via our Discord: [Click here](https://discord.gg/PvS5yfPBwH).
 * Wait for approval. You can track the status of your application through the Sparsity dashboard or other communication channels.
 
 #### 1. Trigger the Application

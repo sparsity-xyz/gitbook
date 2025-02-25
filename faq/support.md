@@ -8,6 +8,6 @@ The **Sparsity Discord** is your go-to **support hub**! Whether you're facing an
 🔥 Got an idea? We’d love to hear it!\
 ⚡ Just want to chat? Join us anytime!
 
-🔗 [**Join the Sparsity Discord**](https://discord.gg/8bxcXmf3)
+🔗 [**Join the Sparsity Discord**](https://discord.gg/PvS5yfPBwH)
 
 We’re building this together—let’s make it amazing! 💙💫

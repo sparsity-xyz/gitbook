@@ -62,7 +62,7 @@ const wsMsg = Message.encode(message).finish();
 socket.send(wsMsg);
 ```
 
-* The server can parse the content from the message in the `__step__` function (mentioned in the previous section).
+* The server can parse the content from the message in the `step` function (mentioned in the previous section).
 
 **Receiving Data from the Sparsity Network**
 
@@ -79,7 +79,7 @@ socket.onmessage = (event) => {
       const responseArr = BatchState.decode(message.data);
       responseArr.states.forEach((x) => {
         const processedData = JSON.parse(x.attributes[0].value);
-        // processedData corresponds to the output "data" of the __status__ function
+        // processedData corresponds to the output "data" of the status function
       });
     }
   });

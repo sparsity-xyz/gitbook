@@ -27,19 +27,19 @@ class MyApplication extends BaseApplication {
     // Implement your application logic here
     
     // Initializes the application with data from the smart contract
-    __init__(initial_data: string): void;
+    init(initial_data: string): void;
     
     // Processes client-defined messages and returns events to be broadcast
-    __step__(messages: Array<any>): Array<StepEvent>;
+    step(messages: Array<any>): Array<StepEvent>;
     
     // Determines session termination and provides final computation results
-    __status__(): [isEnd: boolean, data: string];
+    status(): [isEnd: boolean, data: string];
 }
 ```
 
 ### Core Functions to Implement
 
-#### `__init__(initial_data: string): void`
+#### `init(initial_data: string): void`
 
 This function is invoked during the initialization of the Sparsity network session.
 
@@ -48,7 +48,7 @@ This function is invoked during the initialization of the Sparsity network sessi
 In the Fibonacci demo application, this function receives `initial_data` from the smart contract, decodes it, and starts the computation:
 
 ```typescript
-__init__(initial_data: string) {
+init(initial_data: string) {
     // Decode initial data from the contract
     if (initial_data !== "") {
         const decoded = ethers.AbiCoder.defaultAbiCoder().decode(['uint256'], initial_data);
@@ -63,7 +63,7 @@ __init__(initial_data: string) {
 }
 ```
 
-#### `__status__(): [isEnd: boolean, data: string]`
+#### `status(): [isEnd: boolean, data: string]`
 
 * `isEnd`: Indicates whether the Sparsity network should terminate the session. If `true`, the session ends.
 * `data`: The computed output, which is written back to the user’s smart contract as settlement data. This data is passed to the Outpost contract via the \[`callbackSettlement`] function.
@@ -71,7 +71,7 @@ __init__(initial_data: string) {
 In the Fibonacci demo application, once a valid result is computed, the function signals the session termination and returns the encoded result:
 
 ```typescript
-__status__(): [isEnd: boolean, data: string] {
+status(): [isEnd: boolean, data: string] {
     // Continue session if computation is not yet complete
     if (this.result === 0) {
         return [false, ""];
@@ -81,7 +81,7 @@ __status__(): [isEnd: boolean, data: string] {
 }
 ```
 
-#### `__step__(messages: Array<any>): Array<StepEvent>`
+#### `step(messages: Array<any>): Array<StepEvent>`
 
 For interactive applications, this function processes real-time or scheduled messages sent from the app client. The Sparsity network aggregates and includes these messages in each mined block.
 

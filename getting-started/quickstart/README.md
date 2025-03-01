@@ -14,6 +14,6 @@ This demo introduces the **end-to-end Sparsity App workflow**, including:
 
 ### **Get the Code & Start Building**
 
-🔗 **GitHub Repository:** [Sparsity Fibonacci Demo](https://github.com/sparsity-xyz/demo/tree/main/fibonacci)
+🔗 **GitHub Repository:** [Sparsity Fibonacci Demo](https://github.com/sparsity-xyz/demo/tree/main/fibonacci-js)
 
 Ready to dive in? Let’s build with Sparsity! 🚀

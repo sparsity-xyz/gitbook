@@ -15,7 +15,7 @@ Ensure that your project directory includes a **Dockerfile**—this file outline
 Open a terminal, navigate to your project directory, and run the following command:
 
 ```bash
-docker build -t yourusername/your-image-name:tag .
+docker build --platform linux/amd64 -t yourusername/your-image-name:tag .
 ```
 
 * Replace `yourusername`, `your-image-name`, and `tag` with your specific values.

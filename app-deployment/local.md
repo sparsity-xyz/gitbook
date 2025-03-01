@@ -21,7 +21,7 @@ Follow these steps to deploy your application to the Sparsity network in a produ
     ```sh
     make base-sepolia-deploy
     ```
-    Update `APP_CONTRACT` in `.env` file with the your contract address.
+    Update `APP_CONTRACT` in `.env` file with your app contract address.
 
 5. If you need any assistance, contact our support team via Discord: [Join here](https://discord.com/invite/PvS5yfPBwH) for more details.
 

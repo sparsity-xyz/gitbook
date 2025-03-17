@@ -6,9 +6,9 @@
 
 * [Overview](getting-started/overview.md)
 * [Quick Start](getting-started/quickstart/README.md)
-  * [Submit App Request](getting-started/quickstart/submit-app-request.md)
-  * [Execute App Computation](getting-started/quickstart/execute-app-computation.md)
-  * [Respond to App](getting-started/quickstart/respond-to-app.md)
+  * [Prerequisites](getting-started/quickstart/prerequisites.md)
+  * [First DApp Setup Guide](getting-started/quickstart/first-dapp-setup-guide.md)
+  * [Interact with the DApp](getting-started/quickstart/respond-to-app.md)
 * [System Architecture](getting-started/system-architecture.md)
 * [Create a new project](getting-started/create-a-new-project/README.md)
   * [App Smart Contract](getting-started/create-a-new-project/app-smart-contract.md)

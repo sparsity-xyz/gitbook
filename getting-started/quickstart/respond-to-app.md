@@ -1,33 +1,33 @@
----
-description: App Smart Contract Settlement
----
+# Interact with the DApp
 
-# Respond to App
+Now that everything is running locally, you can perform an **end-to-end test** by interacting with the deployed smart contract.
 
-## 3. Settling the Result to the App
+**📝 Compute Fibonacci for a Given Number**
 
-With the settlement value obtained in the previous section, the **Outpost Contract** will use this value as input and write it back to the user-developed smart contract.
-
-The result of `fibonacci(22)` must also be **ABI-encoded**. Retrieve the computed data from the **App ABCI Core** section and run the validation test:
-
-#### 1️⃣ Navigate to the Contract Directory
+To compute the Fibonacci sequence for a specific number (e.g., `10`), run:
 
 ```sh
-cd contract
+make request-fib NUM=10
 ```
 
-#### 2️⃣ Settle the Result
+This command sends a request to the smart contract, triggering the computation process.
 
-Run the following command to settle the computed result into the original smart contract:
+**⏳ Wait for Processing**
+
+The **Bridge** and **Fleet** services will handle the request. Wait until the computation is completed before proceeding.
+
+**📥 Retrieve the Result**
+
+Once processed, fetch the computed Fibonacci result using:
 
 ```sh
-RESULT=0x000000000000000000000000000000000000000000000000000000000000452f NUM=22 npx hardhat test test/app.ts --network localhost
+make fib-result NUM=10
 ```
 
-Once executed, the result will be successfully recorded in the smart contract.
+**✅ Expected Output**
 
-***
+```
+55
+```
 
-#### 🎉 Your Demo is Now Fully Set Up!
-
-You have successfully completed the local setup for your demo. If you'd like to take it further, follow the **\[**[**deployment guide**](../../app-deployment/local.md)**]** to deploy Fibonacci as your first **Sparsity App**! 🚀
+This confirms that the computation was successfully executed using the Sparsity platform. 🎉

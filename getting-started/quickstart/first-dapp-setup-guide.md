@@ -74,6 +74,7 @@ The **Fleet service** is responsible for triggering the Sparsity execution sessi
 
 ```sh
 docker pull sparsityxyz/fleet:latest
+docker pull sparsityxyz/fleet-er:latest
 ```
 
 #### Initialize Fleet

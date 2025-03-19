@@ -21,6 +21,11 @@ interface APPInterface {
     // isRevert: Indicates whether the session was successful
     // data: Encoded final result from the Sparsity Network
     function callbackSettlement(uint256 sessionId, bool isRevert, bytes memory data) external;
+
+    // Called by the Outpost to verify if the account has joined the specified session
+    // sessionId: Unique session identifier
+    // account: user wallet address
+    function checkAuth(uint256 sessionId, address account) external view returns (bool);
 }
 ```
 
@@ -36,14 +41,6 @@ interface OutpostInterface {
     // sessionId: Unique session identifier
     // initialData: Encoded initial data to pass to the Sparsity Network
     function newSession(uint256 sessionId, bytes memory initialData) external;
-
-    // address: User's wallet address to add to the session, allowing them to interact with the Sparsity Network
-    // sessionId: Unique session identifier
-    function authIn(address account, uint256 sessionId) external;
-
-    // address: User's wallet address to remove from the session
-    // sessionId: Unique session identifier
-    function authOut(address account, uint256 sessionId) external;
 }
 ```
 

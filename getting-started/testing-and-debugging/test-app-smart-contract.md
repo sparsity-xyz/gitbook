@@ -1,53 +1,65 @@
-# Test App Smart Contract
+# App Smart Contract
 
-## App Smart Contract Checklist
+## 1. App Smart Contract
 
-Ensure that the following requirements are met when implementing your App Smart Contract:
+A smart contract is essential for securely recording critical information, such as user data and on-chain configuration, when the application is initialized. This ensures transparency, trust, and verifiability for every interaction within the app.
 
-1. **Implement Required Interfaces**\
-   Verify that all required functions are properly implemented and that they handle data parsing and settlement correctly when triggered.
+**Implementing Your Smart Contract**
 
-**`APPInterface`**
+Developers must extend the Template contract, which serves as the foundational contract for Sparsity applications. The template contract can be found here: 👉 \[Template Contract]
+
+**Required Functions**
+
+To interact with Sparsity, developers must implement the following functions in the smart contract:
 
 ```solidity
 interface APPInterface {
     // Called by the Outpost when a session is successfully created
     // sessionId: Unique session identifier
-    // session: A struct containing the endpoint, address, and session status
+    // session: A struct containing endpoint, address, and session status
     function callbackSession(uint256 sessionId, CallbackSession memory session) external;
 
     // Called by the Outpost when a session ends
     // sessionId: Unique session identifier
-    // isRevert: Indicates whether the session was successful
-    // data: Encoded final result from the Sparsity Network
+    // isRevert: Indicates if the session was successful
+    // data: Encoded final result from Sparsity Network
     function callbackSettlement(uint256 sessionId, bool isRevert, bytes memory data) external;
+
+    // Called by the Outpost to check if the account join the specified session
+    // sessionId: Unique session identifier
+    // account: user wallet address
+    function checkAuth(uint256 sessionId, address account) external view returns (bool);
 }
 ```
 
-Make sure these callback functions are properly exposed to communicate with the Sparsity contract.
+These callback functions must be exposed in the smart contract to enable communication with the Sparsity contract.
 
-2. **Proper Integration with Outpost Contract Interface**\
-   Ensure the contract is properly hooked into the Outpost contract, including handling the relevant functions.
-
-**`OutpostInterface`**
+Simultaneously, the Sparsity Outpost contract exposes the following interface:
 
 ```solidity
 interface OutpostInterface {
     // sessionId: Unique session identifier
-    // initialData: Encoded initial data to pass to the Sparsity Network
+    // initialData: Encoded initial data to pass to Sparsity Network
     function newSession(uint256 sessionId, bytes memory initialData) external;
-
-    // address: User's wallet address to add to the session, allowing them to interact with the Sparsity Network
-    // sessionId: Unique session identifier
-    function authIn(address account, uint256 sessionId) external;
-
-    // address: User's wallet address to remove from the session
-    // sessionId: Unique session identifier
-    function authOut(address account, uint256 sessionId) external;
 }
 ```
 
-3. **Session Creation Validation**\
-   When a new session is created, ensure that the `newSession` function is triggered correctly, and that `initialData` is passed in as expected.
+App developer can interact with these functions to manage sessions and authentication though the developer’s smart contract.
 
-By following this checklist, you can ensure that your App Smart Contract functions seamlessly within the Sparsity ecosystem.
+***
+
+#### Key Concepts
+
+🔹 **Session**\
+A session represents the entire lifecycle of an app’s execution. It determines whether a user is within a session and helps manage authentication. The session ID must be unique for each session.\
+&#xNAN;**`initialData`** is the encoded data that the user passes to the Sparsity network when initializing the session.
+
+🔹 **Auth**\
+Auth verifies whether an address has permission to use Sparsity within a session. This information is eventually relayed from the host chain to the Sparsity network, where the App ABCI Core can utilize it.
+
+🔹 **Settle**\
+When Sparsity completes its computation, the results are returned via a callback and recorded in the developer’s smart contract.
+
+***
+
+By following this approach, developers can ensure that their application's critical state and user data are securely stored and seamlessly integrated within the Sparsity ecosystem.

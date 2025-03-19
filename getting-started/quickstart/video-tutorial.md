@@ -6,9 +6,9 @@ This example demonstrates how to run Fibonacci calculations on the Sparsity plat
 
 ### 🎥 Demo Video
 
-{% embed url="https://drive.google.com/file/d/198DVphlZk9TBrcoGhrW3Y1w_tUQBHluh/preview" %}
+{% embed url="https://youtu.be/IFGNdRkka2o" %}
 
-If the video does not load, [click here to watch](https://drive.google.com/file/d/198DVphlZk9TBrcoGhrW3Y1w_tUQBHluh/view).
+If the video does not load, [click here to watch on YouTube](https://youtu.be/IFGNdRkka2o).
 
 ### 📌 Code Example
 

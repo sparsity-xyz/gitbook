@@ -1,15 +1,15 @@
 # Video Tutorial
 
-### Fibonacci Example
+## Fibonacci Example
 
 This example demonstrates how to run Fibonacci calculations on the Sparsity platform.
 
-#### 🎥 Demo Video
+### 🎥 Demo Video
 
-[Watch on Google Drive](https://drive.google.com/file/d/198DVphlZk9TBrcoGhrW3Y1w_tUQBHluh/view)
+{% embed url="https://drive.google.com/file/d/198DVphlZk9TBrcoGhrW3Y1w_tUQBHluh/preview" %}
 
-#### 📌 Code Example
+If the video does not load, [click here to watch](https://drive.google.com/file/d/198DVphlZk9TBrcoGhrW3Y1w_tUQBHluh/view).
 
-GitHub Repository: [Fibonacci on Sparsity](https://github.com/sparsity-xyz/demo/blob/main/fibonacci-js/README.md)
+### 📌 Code Example
 
-###
+GitHub Repository: [Fibonacci on Sparsity](https://github.com/sparsity-xyz/demo/blob/main/fibonacci-js/README.md)&#x20;

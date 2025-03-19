@@ -11,7 +11,7 @@ This example demonstrates how to run Fibonacci calculations on the Sparsity plat
 _If the video does not load,_ [_click here_](https://youtu.be/lgcMzOxHW2c) _to watch it on YouTube._
 
 📌 **Code Example**\
-GitHub Repository: [Fibonacci on Sparsity](https://github.com/sparsity-xyz/fibonacci-on-sparsity)
+GitHub Repository: [Fibonacci on Sparsity](https://github.com/sparsity-xyz/demo/blob/main/fibonacci-js/README.md)
 
 ***
 

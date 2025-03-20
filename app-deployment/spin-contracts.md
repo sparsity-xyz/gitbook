@@ -23,6 +23,7 @@ Your ABCI application must be packaged as a Docker image and pushed to a public 
 To enable interaction with the Sparsity network, register your contract with the Sparsity Outpost by running cmd tool provided in [demo ](broken-reference)code base:
 
 ```sh
-make base-sepolia-register
+cd contract
+make -f Makefile_sepolia register-app
 ```
 

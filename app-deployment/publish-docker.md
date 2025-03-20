@@ -15,10 +15,10 @@ Ensure that your project directory includes a **Dockerfile**—this file outline
 Open a terminal, navigate to your project directory, and run the following command:
 
 ```bash
-docker build --platform linux/amd64 -t yourusername/your-image-name:tag .
+docker build --platform linux/amd64 -t <registry>/<repository>:<tag> .
 ```
 
-* Replace `yourusername`, `your-image-name`, and `tag` with your specific values.
+* Replace `registry`, `repository`, and `tag` with your specific values.
 * The **tag** is optional but recommended for versioning.
 
 ### **Step 2: Publish the Docker Image**
@@ -38,7 +38,7 @@ You will be prompted to enter your **Docker Hub username** and **password**.
 Once the image is built, push it to **Docker Hub** with the following command:
 
 ```bash
-docker push yourusername/your-image-name:tag
+docker push <registry>/<repository>:<tag>
 ```
 
 This action will make your image publicly available for others to download and use.
@@ -50,7 +50,7 @@ This action will make your image publicly available for others to download and u
 Provide others with your image name and tag, e.g.:
 
 ```
-yourusername/your-image-name:tag
+<registry>/<repository>:<tag>
 ```
 
 #### **2️⃣ Pull the Image**
@@ -58,7 +58,7 @@ yourusername/your-image-name:tag
 Others can download your Docker image by running:
 
 ```bash
-docker pull yourusername/your-image-name:tag
+docker pull <registry>/<repository>:<tag>
 ```
 
 #### **3️⃣ Run the Image**
@@ -66,7 +66,7 @@ docker pull yourusername/your-image-name:tag
 After the image has been pulled, users can verify that it is running correctly by executing:
 
 ```bash
-docker run -d yourusername/your-image-name:tag
+docker run -d <registry>/<repository>:<tag>
 ```
 
 ***

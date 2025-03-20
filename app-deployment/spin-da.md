@@ -17,7 +17,7 @@ For example, if you deployed the demo **Fibonacci** application:
 *   Trigger the application by running:
 
     ```sh
-    make base-sepolia-fib
+    make -f Makefile_sepolia request-fib NUM=10
     ```
 
 #### 2. Retrieve and Verify the Result
@@ -25,5 +25,5 @@ For example, if you deployed the demo **Fibonacci** application:
 Once the computation is complete, retrieve and verify the result, which is settled back into your contract, using:
 
 ```sh
-make base-sepolia-fib-result
+make -f Makefile_sepolia fib-result NUM=10
 ```

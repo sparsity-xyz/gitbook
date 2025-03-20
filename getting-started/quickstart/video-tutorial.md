@@ -6,7 +6,7 @@ This example demonstrates how to run Fibonacci calculations on the Sparsity plat
 
 🎥 **Demo Video**
 
-{% embed url="https://www.youtube.com/watch?v=lgcMzOxHW2c" %}
+{% embed url="https://www.youtube.com/watch?v=FqAX6aUPgr8" %}
 
 _If the video does not load,_ [_click here_](https://youtu.be/lgcMzOxHW2c) _to watch it on YouTube._
 

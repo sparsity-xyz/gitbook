@@ -10,6 +10,6 @@ For a step-by-step guide on setting up and running this example, visit our [GitH
 
 This tutorial demonstrates how to run Fibonacci calculations on the Sparsity platform, showcasing the execution process and results in real time.
 
-{% embed url="https://www.youtube.com/watch?v=lgcMzOxHW2c" %}
+{% embed url="https://www.youtube.com/watch?v=FqAX6aUPgr8" %}
 
-If the video does not load, [click here](https://www.youtube.com/watch?v=lgcMzOxHW2c) to watch it on YouTube.
+If the video does not load, [click here](https://www.youtube.com/watch?v=FqAX6aUPgr8) to watch it on YouTube.

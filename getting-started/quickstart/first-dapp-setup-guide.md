@@ -1,103 +1,15 @@
 # First DApp Setup Guide
 
-This guide walks you through setting up and running the Fibonacci DApp on your local machine using Docker and Sparsity services.
+### Fibonacci: Your First "Hello World" Example
 
-***
+To get started with the Sparsity platform, we’ll use a simple Fibonacci calculation as our first example. This will walk you through the fundamental steps of deploying and executing computations on Sparsity.
 
-### 1. Clone the Repository
+For a step-by-step guide on setting up and running this example, visit our [GitHub repository](https://github.com/sparsity-xyz/sparsity-demo/blob/main/fibonacci-js/README.md). The guide provides detailed instructions on installation, execution, and expected results.
 
-First, pull the project from GitHub and navigate to the correct directory:
+#### 🎥 Video Tutorial
 
-```sh
-git clone https://github.com/sparsity-xyz/demo.git
-cd demo/fibonacci-js
-```
+This tutorial demonstrates how to run Fibonacci calculations on the Sparsity platform, showcasing the execution process and results in real time.
 
-***
+{% embed url="https://www.youtube.com/watch?v=lgcMzOxHW2c" %}
 
-### 2. Build the Docker Image
-
-The Docker image contains the **ABCI core**, encapsulating all computation and execution logic.
-
-```sh
-cd server
-docker build -t abci-fib:latest .
-```
-
-***
-
-### 3. Start the Chain Node & Deploy the Smart Contract
-
-This step simulates a local EVM-based blockchain and deploys the Fibonacci smart contract.
-
-```sh
-cd contract
-npm install
-cp .env.example .env
-make node
-```
-
-Wait until blocks start building before proceeding. Check the terminal output to ensure blocks are being produced.
-
-***
-
-### 4. Start the Bridge
-
-The **Bridge service** connects the local EVM chain with the Sparsity platform.
-
-#### Pull the Bridge Image
-
-```sh
-docker pull sparsityxyz/bridge:latest
-```
-
-#### Run the Bridge
-
-*   **macOS:**
-
-    ```sh
-    docker run --rm -ti -e HOST=host.docker.internal sparsityxyz/bridge:latest
-    ```
-*   **Linux:**
-
-    ```sh
-    docker run --rm -ti -e HOST=172.17.0.1 sparsityxyz/bridge:latest
-    ```
-
-***
-
-### 5. Start the Fleet
-
-The **Fleet service** is responsible for triggering the Sparsity execution session when receiving signals from the Bridge.
-
-#### Pull the Fleet Image
-
-```sh
-docker pull sparsityxyz/fleet:latest
-docker pull sparsityxyz/fleet-er:latest
-```
-
-#### Run Fleet
-
-*   **macOS:**
-
-    ```sh
-    docker run -ti --rm \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        sparsityxyz/fleet:latest fleet run --local
-    ```
-*   **Linux:**
-
-    ```sh
-    docker run -ti --rm \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        --add-host=host.docker.internal:172.17.0.1 \
-        sparsityxyz/fleet:latest fleet run --local
-    ```
-
-***
-
-### 🎉 Your Fibonacci DApp is Now Running
-
-At this point, your **end-to-end Fibonacci DApp** is successfully running on your local machine, integrated with the Sparsity platform. 🚀
-
+If the video does not load, [click here](https://www.youtube.com/watch?v=lgcMzOxHW2c) to watch it on YouTube.

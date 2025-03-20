@@ -6,9 +6,8 @@
 
 * [Overview](getting-started/overview.md)
 * [Quick Start](getting-started/quickstart/README.md)
-  * [Prerequisites](getting-started/quickstart/prerequisites.md)
   * [First DApp Setup Guide](getting-started/quickstart/first-dapp-setup-guide.md)
-  * [Interact with the DApp](getting-started/quickstart/respond-to-app.md)
+  * [DApp With Client](getting-started/quickstart/respond-to-app.md)
   * [Video Tutorial](getting-started/quickstart/video-tutorial.md)
 * [System Architecture](getting-started/system-architecture.md)
 * [Create a new project](getting-started/create-a-new-project/README.md)

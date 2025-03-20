@@ -1,33 +1,15 @@
-# Interact with the DApp
+# DApp With Client
 
-Now that everything is running locally, you can perform an **end-to-end test** by interacting with the deployed smart contract.
+### Gomoku: Interactive DApp with Client Logic
 
-**📝 Compute Fibonacci for a Given Number**
+In this example, we will explore the **Gomoku** demo DApp, which introduces more advanced client-side logic and interactive gameplay. This demonstration showcases a more complex interaction between the frontend and the off-chain computation, highlighting how Sparsity enables secure and efficient processing.
 
-To compute the Fibonacci sequence for a specific number (e.g., `10`), run:
+For a detailed, step-by-step guide on setting up and running the Gomoku DApp, visit our [GitHub repository](https://github.com/sparsity-xyz/sparsity-demo/blob/main/gomoku-js/README.md). The guide provides comprehensive instructions on installation, execution, and expected results.
 
-```sh
-make request-fib NUM=10
-```
+#### 🎥 Video Tutorial
 
-This command sends a request to the smart contract, triggering the computation process.
+This tutorial walks through the deployment and execution of the **Gomoku DApp**, demonstrating how client interactions work alongside Sparsity’s secure computation environment.
 
-**⏳ Wait for Processing**
+{% embed url="https://www.youtube.com/watch?v=B2HA-piGGY8" %}
 
-The **Bridge** and **Fleet** services will handle the request. Wait until the computation is completed before proceeding.
-
-**📥 Retrieve the Result**
-
-Once processed, fetch the computed Fibonacci result using:
-
-```sh
-make fib-result NUM=10
-```
-
-**✅ Expected Output**
-
-```
-55
-```
-
-This confirms that the computation was successfully executed using the Sparsity platform. 🎉
+If the video does not load, [click here](https://www.youtube.com/watch?v=B2HA-piGGY8) to watch it on YouTube.

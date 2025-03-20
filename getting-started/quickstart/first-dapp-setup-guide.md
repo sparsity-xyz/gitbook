@@ -77,64 +77,22 @@ docker pull sparsityxyz/fleet:latest
 docker pull sparsityxyz/fleet-er:latest
 ```
 
-#### Initialize Fleet
-
-*   **macOS:**
-
-    ```sh
-    docker run -ti --rm \
-        -v ./.data:/root/.fleet \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        sparsityxyz/fleet:latest fleet init --local
-    ```
-*   **Linux:**
-
-    ```sh
-    docker run -ti --rm \
-        -v ./.data:/root/.fleet \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        --add-host=host.docker.internal:172.17.0.1 \
-        sparsityxyz/fleet:latest fleet init --local
-    ```
-
-#### Register Fleet
-
-*   **macOS:**
-
-    ```sh
-    docker run -ti --rm \
-        -v ./.data:/root/.fleet \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        sparsityxyz/fleet:latest fleet register --ip 127.0.0.1
-    ```
-*   **Linux:**
-
-    ```sh
-    docker run -ti --rm \
-        -v ./.data:/root/.fleet \
-        -v /var/run/docker.sock:/var/run/docker.sock \
-        --add-host=host.docker.internal:172.17.0.1 \
-        sparsityxyz/fleet:latest fleet register --ip 127.0.0.1
-    ```
-
 #### Run Fleet
 
 *   **macOS:**
 
     ```sh
     docker run -ti --rm \
-        -v ./.data:/root/.fleet \
         -v /var/run/docker.sock:/var/run/docker.sock \
-        sparsityxyz/fleet:latest fleet run
+        sparsityxyz/fleet:latest fleet run --local
     ```
 *   **Linux:**
 
     ```sh
     docker run -ti --rm \
-        -v ./.data:/root/.fleet \
         -v /var/run/docker.sock:/var/run/docker.sock \
         --add-host=host.docker.internal:172.17.0.1 \
-        sparsityxyz/fleet:latest fleet run
+        sparsityxyz/fleet:latest fleet run --local
     ```
 
 ***

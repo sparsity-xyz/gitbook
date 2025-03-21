@@ -37,7 +37,7 @@ We are **building in public**, sharing our progress, challenges, and improvement
 
 We welcome feedback and contributions! If you encounter issues or have suggestions:
 
-* **GitHub Repository**: [https://github.com/sparsity-xyz/sparsity-demo/tree/main/wip-fibonacci-js-tee](https://github.com/sparsity-xyz/sparsity-demo/tree/main/wip-fibonacci-js-tee)
+* **GitHub Repository**: [Tee Demo (Alpha)](https://github.com/sparsity-xyz/sparsity-demo/tree/main/wip-fibonacci-js-tee)
 * **Discord Community**: [Join us on Discord](https://discord.gg/6qRkXsBp56)
 
 Let’s build the future of TEE development together! 🚀

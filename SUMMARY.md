@@ -30,3 +30,7 @@
 
 * [Contribution Guide](faq/contribution-guide.md)
 * [Support](faq/support.md)
+
+## Easter egg
+
+* [Sparsity TEE Local Development Kit (Alpha)](easter-egg/sparsity-tee-local-development-kit-alpha.md)

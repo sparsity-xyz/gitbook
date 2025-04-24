@@ -34,3 +34,22 @@
 ## Easter egg
 
 * [Sparsity TEE Local Development Kit (Alpha)](easter-egg/sparsity-tee-local-development-kit-alpha.md)
+
+## ZKSpin  (legacy)
+
+* [Getting Started](zkspin-legacy/getting-started/README.md)
+  * [Overview](zkspin-legacy/getting-started/overview.md)
+  * [Installation](zkspin-legacy/getting-started/installation.md)
+  * [Create a game project](zkspin-legacy/getting-started/create-a-game-project.md)
+  * [Write Gameplay](zkspin-legacy/getting-started/write-gameplay.md)
+  * [Build & Test Gameplay](zkspin-legacy/getting-started/build-and-test-gameplay.md)
+  * [Integrate with Js Frontend](zkspin-legacy/getting-started/integrate-with-js-frontend.md)
+  * [Save & Load State on Blockchain](zkspin-legacy/getting-started/save-and-load-state-on-blockchain.md)
+* [OPZK Deployment](zkspin-legacy/opzk-deployment/README.md)
+  * [Deploy locally for dev](zkspin-legacy/opzk-deployment/deploy-locally-for-dev.md)
+  * [Deploy spin-contracts](zkspin-legacy/opzk-deployment/deploy-spin-contracts.md)
+  * [Deploy spin-operator](zkspin-legacy/opzk-deployment/deploy-spin-operator.md)
+  * [Deploy spin-challenger](zkspin-legacy/opzk-deployment/deploy-spin-challenger.md)
+  * [Deploy spin-DA](zkspin-legacy/opzk-deployment/deploy-spin-da.md)
+* [References](zkspin-legacy/references/README.md)
+  * [spin-operator reference](zkspin-legacy/references/spin-operator-reference.md)

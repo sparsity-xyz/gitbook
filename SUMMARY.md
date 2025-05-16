@@ -31,9 +31,13 @@
 * [Contribution Guide](faq/contribution-guide.md)
 * [Support](faq/support.md)
 
-## Easter egg
+## Verifiable MCP
 
-* [Sparsity TEE Local Development Kit (Alpha)](easter-egg/sparsity-tee-local-development-kit-alpha.md)
+* [Sparsity TEE Local Development Kit (Alpha)](verifiable-mcp/sparsity-tee-local-development-kit-alpha.md)
+
+***
+
+* [Agent Signature Verification](agent-signature-verification.md)
 
 ## ZKSpin  (legacy)
 

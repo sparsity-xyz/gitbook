@@ -11,7 +11,7 @@ The Sparsity platform uses ECDSA (Elliptic Curve Digital Signature Algorithm) wi
 1. **Required Data**
    * Message content
    * Digital signature
-   * Public key
+   * Public key (in Attestation Document)
 2. **Message Preprocessing**
    * For string messages: Convert to UTF-8 encoded bytes
    * For JSON objects: Convert to canonicalized JSON string (using `,` and `:` as separators, keys sorted)

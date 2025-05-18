@@ -6,6 +6,16 @@
 
 The Sparsity platform uses ECDSA (Elliptic Curve Digital Signature Algorithm) with SHA-384 hashing to verify message authenticity. Each response comes with a digital signature to ensure the message hasn't been tampered with and originates from a trusted Sparsity server.
 
+To establish this trust, Sparsity provides a verifiable chain of evidence from source code to signed output, ensuring the integrity of the execution environment. This trust chain can be validated in five steps:
+
+1. **Codebase A** implements an HTTPS client that communicates with a specific HTTPS endpoint (e.g., OpenAI).
+2. **Codebase A** is packaged into **Docker image B**.
+3. **Docker image B** is then converted into an **AWS Nitro Enclave EIF image C**, a secure execution environment.
+4. **When running**, image C's instance possesses a unique **public key (PK-C)**, whose corresponding **private key (PVK-C)** never leaves the enclave.
+5. For a prompt like `"hi"`, image C communicates with the GPT-4 endpoint and produces a signed response such as `"Hello! How can I assist you today?"`. This response is cryptographically signed using **PVK-C**, and the corresponding **attestation document** includes **PK-C** for verification.
+
+This attested signature, paired with the public key, enables any verifier to independently confirm that the message was generated inside the trusted enclave instance running code from the verified image.
+
 ### Verification Steps
 
 1. **Required Data**
